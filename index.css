@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#frame{
+    width: 300px;
+    height: 500px;
+    border: silver 5px solid;
+}
+
+#screen{
+    height: 30%;
+    width: 100%;
+    border-bottom: 3px silver solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    opacity: 80%;
+}
+#middle-half{
+    border-bottom: 3px silver solid;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.button{
+    background-color: blue;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.fa-solid{
+    color: white;
+}
+
+#clear-record{
+    color: white;
+    font-weight: bolder;
+}
+
+
+#lower-half{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: auto;
+    display: block;
+    /* background-color: red; */
+    width: 100%;
+    height: 57%;
+    font-size: larger;
+    background-color:aliceblue;
+}
+#lower-half > div{
+    padding: 5px;
+    text-align: center;
+    font-size: xx-large;
+    border-bottom: silver 1px solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
