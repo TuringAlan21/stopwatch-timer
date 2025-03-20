@@ -30,7 +30,7 @@ playPause.addEventListener('click', function () {
 function startStopwatch() {
     timer = setInterval(function () {
         milliseconds++; 
-        if (milliseconds >= 1000) {
+        if (milliseconds >= 100) {
             seconds++; 
             milliseconds = 0; 
         }
