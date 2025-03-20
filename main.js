@@ -52,6 +52,7 @@ function resetTimer() {
     milliseconds = 0;
     clearInterval(timer);
     isRunning = false;
+    icon.classList.add('fa-play');
     updateSaveButton();
 }
 
