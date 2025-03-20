@@ -55,7 +55,16 @@ function resetTimer() {
     updateSaveButton();
 }
 
-resetBtn.addEventListener('click', resetTimer);
+resetBtn.addEventListener('click', function(){
+    if(isRunning && icon.classList.contains('fa-pause')){
+        icon.classList.replace('fa-pause', 'fa-play')
+        saveBtn.disabled = true
+        saveBtn.backgroundColor = 'grey'
+    }{
+        
+    }
+    resetTimer();
+};
 
 saveBtn.addEventListener('click', function () {
     const savedTime = document.createElement('div');
