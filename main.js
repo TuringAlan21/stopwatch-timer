@@ -30,8 +30,8 @@ playPause.addEventListener('click', function () {
 function startStopwatch() {
     timer = setInterval(function () {
         milliseconds++; 
-        if (milliseconds >= 100) {
-            seconds++; 
+        if (milliseconds >= 1000) {
+            seconds++; // 
             milliseconds = 0; 
         }
         const hours = Math.floor(seconds / 3600);
@@ -39,7 +39,7 @@ function startStopwatch() {
         const secs = seconds % 60;
         updateSaveButton();
         screen.textContent = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
-    }, 1); 
+    }, 1);
 }
 
 function pad(num) {
@@ -55,16 +55,14 @@ function resetTimer() {
     updateSaveButton();
 }
 
-resetBtn.addEventListener('click', function(){
-    resetTimer();
-};
+resetBtn.addEventListener('click', resetTimer);
 
 saveBtn.addEventListener('click', function () {
     const savedTime = document.createElement('div');
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-    savedTime.textContent = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`; 
+    savedTime.textContent = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
     lowerScreen.prepend(savedTime);
     resetTimer();
 });
