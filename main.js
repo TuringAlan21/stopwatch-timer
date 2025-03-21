@@ -6,7 +6,6 @@ const screen = document.getElementById('screen');
 const lowerScreen = document.getElementById('lower-half');
 const icon = document.querySelector('i');
 const clearBtn = document.getElementById('clear-record');
-
 let timer;
 let isRunning = false;
 let seconds = 0;

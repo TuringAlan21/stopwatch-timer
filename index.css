@@ -6,7 +6,7 @@ body{
     height: 100vh;
 }
 
-#frame{
+.frame{
     width: 300px;
     height: 500px;
     border: silver 5px solid;
@@ -41,6 +41,7 @@ body{
     height: 50px;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 
